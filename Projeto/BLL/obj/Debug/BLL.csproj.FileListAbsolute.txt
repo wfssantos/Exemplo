@@ -1,0 +1,13 @@
+C:\William\Resource\VidaLink\Projeto\Web\BLL\bin\Debug\BLL.dll
+C:\William\Resource\VidaLink\Projeto\Web\BLL\bin\Debug\BLL.pdb
+C:\William\Resource\VidaLink\Projeto\Web\BLL\bin\Debug\Model.dll
+C:\William\Resource\VidaLink\Projeto\Web\BLL\bin\Debug\Model.pdb
+C:\William\Resource\VidaLink\Projeto\Web\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\William\Resource\VidaLink\Projeto\Web\BLL\obj\Debug\BLL.dll
+C:\William\Resource\VidaLink\Projeto\Web\BLL\obj\Debug\BLL.pdb
+C:\William\Resource\VidaLink\Projeto\BLL\bin\Debug\BLL.dll
+C:\William\Resource\VidaLink\Projeto\BLL\bin\Debug\BLL.pdb
+C:\William\Resource\VidaLink\Projeto\BLL\bin\Debug\Model.dll
+C:\William\Resource\VidaLink\Projeto\BLL\bin\Debug\Model.pdb
+C:\William\Resource\VidaLink\Projeto\BLL\obj\Debug\BLL.dll
+C:\William\Resource\VidaLink\Projeto\BLL\obj\Debug\BLL.pdb

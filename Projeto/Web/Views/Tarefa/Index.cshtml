@@ -1,0 +1,85 @@
+﻿@model Web.Model.TarefaViewModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script>
+    function Pesquisar()
+    {
+        $.ajax({
+            url: '@Url.Action("Pesquisa","Tarefa")',
+            data: { titulo: $('#txtTitulo').val(), titulo: $('#txtDescricao').val() },
+            type: "Post",
+            success: function (result) {
+                $("#grid").html(result);
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            },
+            complete: function () {
+            }
+        });
+    }
+
+    function Novo()
+    {
+        $("#novaTarefa").modal().show();
+    }
+
+    function Adicionar()
+    {
+        $("#formNovo").submit();
+    }
+
+    function Editar(id)
+    {
+
+    }
+
+    function Excluir(id)
+    {
+        $.ajax({
+            url: '@Url.Action("Delete","Tarefa")',
+            data: { id: id },
+            type: "Post",
+            success: function (result) {
+                alert('Deletado');
+            },
+            error: function (xhr, ajaxOptions, thrownError) {
+            },
+            complete: function () {
+            }
+        });
+    }
+</script>
+
+<h2>Tarefa</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.DisplayNameFor(m => m.Titulo)
+            @Html.TextBoxFor(m => m.Titulo, new { Class = "form-control", Maxlength = "50", Id= "txtTitulo" })
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            @Html.DisplayNameFor(m => m.Descricao)
+            @Html.TextBoxFor(m => m.Descricao, new { Class = "form-control", Maxlength = "50", Id = "txtTitulo" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12 text-right">
+        <button onclick="Pesquisar();" class="btn" title="pesquisar" type="button"><i class="glyphicon glyphicon-search"></i>&nbsp;Pesquisar</button>
+        <button onclick="Novo();" class="btn" title="novo" type="button"><i class="glyphicon glyphicon-plus"></i>&nbsp;Novo</button>
+    </div>
+</div>
+<br />
+<div id="grid">
+    @Html.Partial("_Grid", Model)
+</div>
+<div class="modal fade" id="novaTarefa" tabindex="-1" role="dialog">
+    @Html.Partial("_ModalNovo", Model)
+</div>

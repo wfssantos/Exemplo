@@ -1,0 +1,4 @@
+C:\William\Resource\VidaLink\Projeto\Web\Model\bin\Debug\Model.dll
+C:\William\Resource\VidaLink\Projeto\Web\Model\bin\Debug\Model.pdb
+C:\William\Resource\VidaLink\Projeto\Web\Model\obj\Debug\Model.dll
+C:\William\Resource\VidaLink\Projeto\Web\Model\obj\Debug\Model.pdb
