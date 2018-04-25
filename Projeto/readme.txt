@@ -1,0 +1,3 @@
+- Colocar para rodar o WEB
+- Site: http://localhost/Tarefa, 
+- Atualizar o endereço do serviço na TarefaController, linhas (20,42,64,90)
